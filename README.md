@@ -46,6 +46,8 @@ jobs:
     steps:
       - name: Checkout Source
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
 
       - name: Get changed UML files
         id: getfile
